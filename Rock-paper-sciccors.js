@@ -60,5 +60,26 @@ else if(P1=="paper" && P2=="scissors")
 
 
 else if(P1==P2)
-=======
+{
+    console.log("Tie go again")
+}
+
+
+else if(P2=="scissors" && P1=="rock")
+{
+    console.log("You Win! rock beats scissors")
+}
+
+else if(P2=="rock" && P1=="paper")
+{
+    console.log("You Win! paper beats rock")
+}
+
+else if(P1=="scissors" && P2=="paper")
+{
+    console.log("P1 Wins scissors beats paper")
+}
+}
+
+
 
