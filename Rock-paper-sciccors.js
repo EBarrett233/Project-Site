@@ -1,92 +1,64 @@
-let P1 = .67
-let P2 = Math.random()
 
-
-
+let P1 = ""
+let P2 = ""
+let num = Math.random()
 // Rock is below .33 
 // paper is between .33 & .66
 //sciccors is above .66 
-
-function pickP1()
-{
-
-
-if(P1<.33)
-{
-    P1 = "paper"
+function pickRock(){
+     P1 = "rock"
+     console.log("You picked "+ P1)
 }
-
-if(P1>=.33 && P1<.66)
-{
-    P1 = "Rock"
+function pickPaper(){
+     P1 = "paper"
+     console.log("You picked "+ P1)
 }
-
-if(P1>=.66)
-{
-    P1 = "sciccors"
+function pickScissors(){
+     P1 = "scissors"
+     console.log("You picked "+ P1)
 }
-
-}
-pickP1()
-
-console.log(P1)
 
 function pickP2()
 {
-
-if(P2<.33)
+if(num<.33)
 {
     P2 = "paper"
+    console.log("Computer picks "+ P2)
 }
 
-if(P2>=.33 && P2<.66)
+if(num>=.33 && num<.66)
 {
-    P2 = "Rock"
+    P2 = "rock"
+    console.log("Computer picks "+ P2)
+
 }
 
-if(P2>=.66)
+if(num>=.66)
 {
-    P2 = "sciccors"
+    P2 = "scissors"
+    console.log("Computer picks "+ P2)
 }
 
 }
-pickP2()
-console.log(P2)
 
 
-if(P1=="sciccors" && P2=="Rock")
+function checkWinner(){
+if(P1=="scissors" && P2=="rock")
 {
-    console.log("P2 Wins rock beats sciccors")
+    console.log("Computer Wins! rock beats scissors")
 }
 
-if(P1=="paper" && P2=="Rock")
+else if(P1=="paper" && P2=="rock")
 {
-    console.log("P1 Wins paper beats rock")
+    console.log("You Win! paper beats rock")
 }
 
-if(P1=="paper" && P2=="sciccors")
+else if(P1=="paper" && P2=="scissors")
 {
-    console.log("P2  Wins sciccors beats paper")
+    console.log("Computer Wins! scissors beats paper")
 }
 
 
-if(P1==P2)
-{
-    console.log("Tie go again")
-}
+else if(P1==P2)
+=======
 
-
-if(P2=="sciccors" && P1=="Rock")
-{
-    console.log("P1 Wins rock beats sciccors")
-}
-
-if(P2=="Rock" && P1=="paper")
-{
-    console.log("P2 Wins rock beats sciccors")
-}
-
-if(P1=="sciccors" && P2=="paper")
-{
-    console.log("P1 Wins sciccors beats paper")
-}
