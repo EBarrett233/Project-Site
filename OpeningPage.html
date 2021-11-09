@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening Page</title>
+</head>
+<style>
+    h1{
+        font-size: 5rem;
+	    text-align: center;
+	    color: #fcedd8;
+	   	font-family: 'Niconne', cursive;
+	    font-weight: 100px;
+      text-shadow: 5px 5px 0px #eb452b, 
+                  10px 10px 0px #efa032, 
+                  15px 15px 0px #46b59b, 
+                  20px 20px 0px #017e7f, 
+                  25px 25px 0px #052939, 
+                  30px 30px 0px #c11a2b, 
+                  35px 35px 0px #c11a2b, 
+                  40px 40px 0px #c11a2b, 
+                  45px 45px 0px #c11a2b;
+                  
+}
+
+body{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+.general
+    {
+        border: 5px solid black;
+        border-radius: 25px;
+        width:750px;
+        height:500px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+.hero
+{
+display:flex;
+flex-direction: row;
+justify-content:space-between;
+text-align: center;
+}
+h2{
+    font-size: 3rem;
+	    text-align: center;
+	    color: #fcedd8;
+	   	font-family: 'Niconne', cursive;
+	    font-weight: 100px;
+      text-shadow: 5px 5px 0px #eb452b, 
+                  10px 10px 0px #efa032, 
+                  15px 15px 0px #46b59b
+}
+button
+{
+padding:15px 25px;
+text-align: center;
+cursor: pointer;
+border-radius: 20px;
+background-color: seashell;
+border: none;
+}
+.button:hover
+{
+background-color: #f1f1f1;
+}
+</style>
+<body>
+<div>
+<h1>Welcome to our Game Website!</h1>
+</div>
+<br>
+<div>
+<h2>Please select a game:</h2>
+</div>
+<center>
+<div class = "hero">
+<div class = "general">
+    <h2>Tic-Tac-Toe!</h2>
+    <img src="Tic-Tac-ToeThumbnail.png" width = "500" height = "250px">
+    <br>
+    <br>
+    <button onclick= "window.location.href =  'tictactoefinal.html'" class = "sunset" >Play Now!</button>
+</div>
+<br>
+<br>
+<div class = "general">
+    <h2>Rock, Paper, Scissors!</h2>
+    <img src = "RPGthumbnail.png" width = "500px" height = "250px">
+    <br>
+    <br> 
+    <button onclick="window.location.href = 'RockPaperScissorsUpdate.html'" class = "sunset">Play Now!</button>
+</div>
+</div>
+</center>
+
+</body>
+</html>
