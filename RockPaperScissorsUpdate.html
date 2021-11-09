@@ -34,7 +34,8 @@ h2{
                   10px 10px 0px #efa032, 
                   15px 15px 0px #46b59b
 }
-body {
+body 
+{
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
@@ -72,6 +73,12 @@ body {
 }
 button{
     margin-right: 40px;
+    padding:15px 25px;
+text-align: center;
+cursor: pointer;
+border-radius: 20px;
+background-color: seashell;
+border: none;
 }
 </style>
 <body>
@@ -106,15 +113,10 @@ button{
         <br>
         <br>
         <center>
-        <div>
-            <button onclick="pickP2()">Computer Choice</button>
-        </div>
-        <br>
-        <br>
-        <div>
-            <button onclick="checkWinner()">Check Winner</button>
-        </div>
+            <p id="playerchoice">Player Choice</p>
+            <p id="computerchoice">Computer Choice</p>
+            <p id="winner">Winner</p>
        </center>
-        <script src="Rock-paper-sciccors.js"></script>
+        <script src="rock-paper-scissors-js-update.js"></script>
 </body>
 </html>
