@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors, Game!</title>
+</head>
+<style>
+h1{
+    font-size: 5rem;
+	    text-align: center;
+	    color: #fcedd8;
+	   	font-family: 'Niconne', cursive;
+	    font-weight: 100px;
+      text-shadow: 5px 5px 0px #eb452b, 
+                  10px 10px 0px #efa032, 
+                  15px 15px 0px #46b59b, 
+                  20px 20px 0px #017e7f, 
+                  25px 25px 0px #052939, 
+                  30px 30px 0px #c11a2b, 
+                  35px 35px 0px #c11a2b, 
+                  40px 40px 0px #c11a2b, 
+                  45px 45px 0px #c11a2b;
+                  
+}
+h2{
+    font-size: 3rem;
+	    text-align: center;
+	    color: #fcedd8;
+	   	font-family: 'Niconne', cursive;
+	    font-weight: 100px;
+      text-shadow: 5px 5px 0px #eb452b, 
+                  10px 10px 0px #efa032, 
+                  15px 15px 0px #46b59b
+}
+body 
+{
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+.rock{
+    height: 300px;
+    width: 400px;
+}
+.paper{
+    height: 300px;
+    width: 400px;
+}
+.scissors{
+    height: 300px;
+    width: 400px;
+}
+button{
+    margin-right: 40px;
+    padding:15px 25px;
+text-align: center;
+cursor: pointer;
+border-radius: 20px;
+background-color: seashell;
+border: none;
+}
+</style>
+<body>
+    <br>
+    <br>
+    <button onclick="window.location.href = 'OpeningPage.html'" class = "goodbye">Back to game selection</button>
+    <h1>Rock, Paper, Scissors!</h1>
+    <div class="row">
+        <div>
+            <h2>Rock</h2>
+            <button onclick="pickRock()">
+                <img class="rock" src="https://thewillnigeria.com/news/wp-content/uploads/2020/08/dwayne-johnson-e1573760481985.jpeg">
+            </button>
+        </div>
+
+        <div>
+            <h2>Paper</h2>
+            <button onclick="pickPaper()">
+                <img class="paper" src="https://th.bing.com/th/id/R.8ee96b6fb16d6f20e10262c2d1c40008?rik=fHCtDg0r3tHnwg&riu=http%3a%2f%2fwww.shutupandtakemymoney.com%2fwp-content%2fuploads%2f2020%2f03%2fscarface-toilet-paper-meme.jpg&ehk=e%2bk%2f1DwYkqafEfun1thc8qiyNla0axL9%2f9Z%2f8ah3g28%3d&risl=&pid=ImgRaw&r=0" alt="">
+            </button>
+        </div>
+
+        <div>
+            <h2>Scissors</h2>
+            <button onclick="pickScissors()">
+                <img class="scissors" src="https://i.imgflip.com/1ab2n6.jpg" alt="">
+            </button>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+            <p id="winner">Winner</p>
+       </center>
+        <script src="rockpaperscissors2players.js"></script>
+</body>
+</html>
