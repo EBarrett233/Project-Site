@@ -1,5 +1,6 @@
 let P1 = ""
 let P2 = ""
+let score = 0
 
 // Rock is below .33 
 // paper is between .33 & .66
@@ -67,14 +68,12 @@ else if(P1=="rock" && P2=="paper")
 {
     let z = "Computer Wins! Paper beats Rock!"
     document.getElementById("winner").innerHTML = z
-
 }
 
 else if(P1=="paper" && P2=="scissors")
 {
     let z = "Computer Wins! Scissors beats Paper!"
     document.getElementById("winner").innerHTML = z
-
 }
 
 
@@ -84,23 +83,28 @@ else if(P1==P2)
     document.getElementById("winner").innerHTML = z
 }
 
-
 else if(P2=="scissors" && P1=="rock")
 {
     let z = "You Win! Rock beats Scissors!"
     document.getElementById("winner").innerHTML = z
+    score++
 }
 
 else if(P2=="rock" && P1=="paper")
 {
     let z = "You Win! Paper beats Rock!"
     document.getElementById("winner").innerHTML = z
+    score++
 }
 
 else if(P1=="scissors" && P2=="paper")
 {
     let z = "You Win! Scissors beats Paper!"
     document.getElementById("winner").innerHTML = z
+    score++
 }
+localStorage.setItem('score',score)
+
+
 }
 
