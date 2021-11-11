@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Stats Page</h1>
+        <p>This page shows you your stats for all games</p>
+        <p id="rpsgames"></p>
+        <p id="tttxscore"></p>
+        <p id="tttoscore"></p>
+        <button onclick="window.location.href = 'OpeningPage.html'" class = "goodbye">Back to game selection</button>
+    </body>
+    <script>
+        function getrpsscore(){
+            let x = localStorage.getItem('score')
+            document.getElementById('rpsgames').innerHTML = "You have "+x+" Rock Paper Scissors wins!"
+        }
+        function gettttxscore(){
+            let y = localStorage.getItem('xscore')
+            document.getElementById('tttxscore').innerHTML = "X has "+y+" Tic Tac Toe Wins!"
+            
+        }
+        function gettttoscore(){
+            let z = localStorage.getItem('oscore')
+            document.getElementById('tttoscore').innerHTML = "O has "+z+" Tic Tac Toe Wins!"
+
+        }
+        
+    </script>
+</html>
