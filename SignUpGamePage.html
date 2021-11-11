@@ -61,19 +61,31 @@ body {
         <h1>Sign-Up</h1>
         <br>
         <h4>Username</h4>
-        <input type="text" placeholder = "Please Select a Username" class = "hero">
+        <input type="text" placeholder = "Please Select a Username" class = "hero"id="username">
         <h4>Password</h4>
-        <input type="text" placeholder = "Please Select a Password" class = "hero">
+        <input type="text" placeholder = "Please Select a Password" class = "hero"id="password">
         <br>
         <br>
         <br>
-        <button><a href = "OpeningPage.html">Sign-Up Now!</a></button>
+        <button onclick="validation()">Sign-Up Now!</button>
         <br>
         <br>
         <br>
         </div>
         <br>
         <footer>-© 2021, Created by: Finn, Ezra, Malik, and Brian-</footer>
+        <script>
+            function validation(){
+            let x = document.getElementById("username").value
+            let y = document.getElementById("password").value
+            if(x.length>=1 && y.length>=1){
+                location.href="OpeningPage.html"
+            }
+            else{
+                console.log("login failed")
+            }
+            }
+        </script>
         </center>
     </body>
 </html>
